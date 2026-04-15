@@ -1,5 +1,5 @@
 % Parameters
-N = 2048;               % FFT Size
+N = 1024;               % FFT Size
 
 % The theoretical max magnitude squared after a 1024-point FFT
 %%MaxMagSq = (InputMax * N)^2; %%unscaled 22bit

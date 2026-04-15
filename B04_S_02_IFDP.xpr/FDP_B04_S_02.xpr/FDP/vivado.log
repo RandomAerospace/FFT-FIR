@@ -1,0 +1,438 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Apr 10 11:53:42 2026
+# Process ID: 51092
+# Current directory: C:/Users/STARGATE_user/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent52012
+# Log file: C:/Users/STARGATE_user/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/STARGATE_user/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP'
+INFO: [Project 1-313] Project file moved from 'C:/Users/steve/Downloads/EE2026 Project/10042026/FDP/.Xil/Vivado-3872-stevenchang/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 865.660 ; gain = 128.648
+update_compile_order -fileset sources_1
+close [ open C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.srcs/sources_1/new/2k4kBPF.mem w ]
+add_files C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.srcs/sources_1/new/2k4kBPF.mem
+close [ open C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.srcs/sources_1/new/2khpf.v w ]
+add_files C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.srcs/sources_1/new/2khpf.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.srcs/sources_1/new/2khpf.mem w ]
+add_files C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.srcs/sources_1/new/2khpf.mem
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+[Fri Apr 10 12:42:52 2026] Launched synth_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/synth_1/runme.log
+[Fri Apr 10 12:42:52 2026] Launched impl_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+[Fri Apr 10 12:49:41 2026] Launched synth_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/synth_1/runme.log
+[Fri Apr 10 12:49:41 2026] Launched impl_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Apr 10 12:58:07 2026] Launched impl_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 783 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1769.062 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1769.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 164 instances were transformed.
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 164 instances
+
+open_run: Time (s): cpu = 00:00:43 ; elapsed = 00:00:37 . Memory (MB): peak = 1865.320 ; gain = 955.191
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1892.059 ; gain = 3.133
+report_utilization: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1892.059 ; gain = 3.133
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713518A
+set_property PROGRAM.FILE {C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183713518A
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Apr 10 13:24:46 2026] Launched synth_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/synth_1/runme.log
+[Fri Apr 10 13:24:46 2026] Launched impl_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713518A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1
+launch_runs impl_1 -jobs 12
+[Fri Apr 10 13:35:33 2026] Launched impl_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Apr 10 13:39:21 2026] Launched synth_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/synth_1/runme.log
+[Fri Apr 10 13:39:21 2026] Launched impl_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183713518A
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Apr 10 13:56:04 2026] Launched synth_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/synth_1/runme.log
+[Fri Apr 10 13:56:04 2026] Launched impl_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713518A
+set_property PROGRAM.FILE {C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP/FDP.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183713518A
+archive_project C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/100426_2pm_FDP.xpr.zip -temp_dir C:/Users/STARGATE_user/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-51092-STARGATE_BASE -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/STARGATE_user/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-51092-STARGATE_BASE' for archiving project
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/FDP'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/STARGATE_user/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-51092-STARGATE_BASE/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'blk_mem_gen_img_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'blk_mem_gen_const_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'blk_mem_gen_img_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'blk_mem_gen_const_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'blk_mem_gen_const'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'blk_mem_gen_const'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'blk_mem_gen_img'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'blk_mem_gen_img'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/10042026.xpr/100426_2pm_FDP.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:28 . Memory (MB): peak = 2775.449 ; gain = 9.922
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713518A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw
+close_design
+close_project
+open_project C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP'
+INFO: [Project 1-313] Project file moved from 'C:/Users/user/Downloads/LATEST 10042026.xpr/FDP/.Xil/Vivado-23144-LAPTOP-GTUAJAA0/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2778.453 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+[Fri Apr 10 18:04:44 2026] Launched synth_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.runs/synth_1/runme.log
+[Fri Apr 10 18:04:44 2026] Launched impl_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 780 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2778.453 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2778.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 164 instances were transformed.
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 164 instances
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2778.453 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+[Fri Apr 10 18:25:09 2026] Launched synth_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.runs/synth_1/runme.log
+[Fri Apr 10 18:25:09 2026] Launched impl_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 784 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2857.246 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2857.246 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 2857.246 ; gain = 21.734
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+[Fri Apr 10 18:45:19 2026] Launched synth_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.runs/synth_1/runme.log
+[Fri Apr 10 18:45:19 2026] Launched impl_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 784 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2887.301 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2887.301 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2887.383 ; gain = 17.121
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+[Fri Apr 10 18:54:42 2026] Launched synth_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.runs/synth_1/runme.log
+[Fri Apr 10 18:54:42 2026] Launched impl_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 784 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2925.516 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2925.516 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 2925.516 ; gain = 15.082
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Apr 10 19:04:35 2026] Launched impl_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2937.242 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713518A
+set_property PROGRAM.FILE {C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183713518A
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+[Fri Apr 10 19:57:14 2026] Launched synth_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.runs/synth_1/runme.log
+[Fri Apr 10 19:57:14 2026] Launched impl_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Apr 10 20:08:33 2026] Launched impl_1...
+Run output will be captured here: C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP/FDP.runs/impl_1/runme.log
+archive_project C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/B04_S_02_IFDP.xpr/FDP_B04_S_02.xpr.zip -temp_dir C:/Users/STARGATE_user/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-51092-STARGATE_BASE -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/STARGATE_user/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-51092-STARGATE_BASE' for archiving project
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/STARGATE_user/Desktop/EE2026/project/FFT_FIR_EE2026_Spectrum/FFT+FIR/FINAL_IFDP.xpr/FDP'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/STARGATE_user/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-51092-STARGATE_BASE/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'blk_mem_gen_img_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'blk_mem_gen_const_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'blk_mem_gen_img_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'blk_mem_gen_const_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'blk_mem_gen_const'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'blk_mem_gen_const'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'blk_mem_gen_img'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'blk_mem_gen_img'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

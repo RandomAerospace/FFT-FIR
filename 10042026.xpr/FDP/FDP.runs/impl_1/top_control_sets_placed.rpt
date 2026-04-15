@@ -1,0 +1,191 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Apr 10 14:00:13 2026
+| Host         : STARGATE_BASE running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   120 |
+| Unused register locations in slices containing registers |   364 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            6 |
+|      4 |            4 |
+|      6 |            2 |
+|      8 |            8 |
+|     10 |           13 |
+|     12 |            8 |
+|     14 |            6 |
+|    16+ |           73 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1962 |          326 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            1008 |          172 |
+| Yes          | No                    | No                     |            1744 |          205 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             658 |          142 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+---------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+
+|     Clock Signal    |                         Enable Signal                         |                          Set/Reset Signal                         | Slice Load Count | Bel Load Count |
++---------------------+---------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+
+| ~w_6p25MHz_BUFG     |                                                               |                                                                   |                1 |              2 |
+|  SCK_OBUF_BUFG      |                                                               |                                                                   |                1 |              2 |
+|  SCK_OBUF_BUFG      | mic_driver/CS_i_1_n_0                                         |                                                                   |                1 |              2 |
+|  DAC_SCLK_OBUF_BUFG | speaker_driver/active2_out                                    | fast_clk/active0                                                  |                1 |              2 |
+|  DAC_SCLK_OBUF_BUFG | speaker_driver/DAC_DINA_i_1_n_0                               |                                                                   |                1 |              2 |
+|  DAC_SCLK_OBUF_BUFG | fast_clk/shift_reg_reg[11]                                    | fast_clk/shift_reg_reg[0]                                         |                1 |              2 |
+|  CLOCK_IBUF_BUFG    | dft_inst/stage2/instPerm31565/mem_reg                         | sw1_IBUF                                                          |                2 |              4 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage4/shiftFIFO_31581/SR[0]                             |                1 |              4 |
+|  CLOCK_IBUF_BUFG    | scroller/btnL_reg                                             | btnC_IBUF                                                         |                1 |              4 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage5/instPerm31582/outCount_for_rd_addr[1]_i_1__0_n_0  |                1 |              4 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage7/shiftFIFO_31598/SR[0]                             |                1 |              6 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage8/instPerm31599/outCount_for_rd_addr[2]_i_1__0_n_0  |                1 |              6 |
+|  CLOCK_IBUF_BUFG    | dft_inst/stage11/instPerm31616/nextReg_31621/count[4]_i_2_n_0 | dft_inst/stage10/shiftFIFO_31615/SR[0]                            |                1 |              8 |
+|  DAC_SCLK_OBUF_BUFG |                                                               |                                                                   |                4 |              8 |
+|  DAC_SCLK_OBUF_BUFG |                                                               | fast_clk/count[3]_i_1__9_n_0                                      |                1 |              8 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage10/shiftFIFO_31615/inCount_reg[0][0]                |                1 |              8 |
+|  DAC_SCLK_OBUF_BUFG | fast_clk/shift_reg_reg[11]                                    | fast_clk/active0                                                  |                3 |              8 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage11/instPerm31616/shiftFIFO_31624/SR[0]              |                1 |              8 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage11/instPerm31616/outCount_for_rd_addr[3]_i_1__0_n_0 |                1 |              8 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage11/instPerm31616/outCount_for_rd_data               |                1 |              8 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/FSM_onehot_state[2]_i_1__2_n_0                   | sw1_IBUF                                                          |                1 |             10 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage13/shiftFIFO_31640/inCount_reg[0][0]                |                2 |             10 |
+|  CLOCK_IBUF_BUFG    | dft_inst/stage14/instPerm31641/nextReg_31646/count            | dft_inst/stage13/shiftFIFO_31640/SR[0]                            |                2 |             10 |
+|  CLOCK_IBUF_BUFG    | fir_brdg/E[0]                                                 | fir_brdg/SR[0]                                                    |                2 |             10 |
+|  CLOCK_IBUF_BUFG    | band_pass_filter/FSM_onehot_state[2]_i_1__1_n_0               | sw1_IBUF                                                          |                2 |             10 |
+|  DAC_SCLK_OBUF_BUFG |                                                               | norm_clk/count[4]_i_1__9_n_0                                      |                1 |             10 |
+|  DAC_SCLK_OBUF_BUFG | speaker_driver/E[0]                                           | fast_clk/active0                                                  |                2 |             10 |
+|  CLOCK_IBUF_BUFG    | high_pass_filter/FSM_onehot_state[2]_i_1__0_n_0               | sw1_IBUF                                                          |                2 |             10 |
+|  SCK_OBUF_BUFG      |                                                               | mic_driver/tick_counter[4]_i_1__0_n_0                             |                2 |             10 |
+|  CLOCK_IBUF_BUFG    | lpf_filter/FSM_onehot_state[2]_i_1_n_0                        | sw1_IBUF                                                          |                1 |             10 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage14/instPerm31641/shiftFIFO_31649/SR[0]              |                1 |             10 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage14/instPerm31641/outCount_for_rd_data               |                1 |             10 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage14/instPerm31641/outCount_for_rd_addr[4]_i_1__0_n_0 |                2 |             10 |
+|  CLOCK_IBUF_BUFG    |                                                               | count_1mhz[5]_i_1_n_0                                             |                2 |             12 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage16/shiftFIFO_31665/inCount_reg[0][0]                |                2 |             12 |
+|  CLOCK_IBUF_BUFG    | dft_inst/stage17/instPerm31666/nextReg_31671/count            | dft_inst/stage16/shiftFIFO_31665/SR[0]                            |                2 |             12 |
+|  DAC_SCLK_OBUF_BUFG |                                                               | slow_clk/count[5]_i_1__8_n_0                                      |                2 |             12 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage17/instPerm31666/outCount_for_rd_data0              |                1 |             12 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage17/instPerm31666/shiftFIFO_31674/SR[0]              |                1 |             12 |
+|  CLOCK_IBUF_BUFG    |                                                               | mic_driver/onemeg/counter[5]_i_1_n_0                              |                2 |             12 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage17/instPerm31666/outCount_for_rd_addr[5]_i_1__0_n_0 |                2 |             12 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage20/instPerm31691/shiftFIFO_31699/SR[0]              |                2 |             14 |
+|  CLOCK_IBUF_BUFG    | dft_inst/stage20/instPerm31691/nextReg_31696/count            | dft_inst/stage19/shiftFIFO_31690/SR[0]                            |                2 |             14 |
+|  CLOCK_IBUF_BUFG    | wave_buf/write_x[6]_i_1_n_0                                   |                                                                   |                2 |             14 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage19/shiftFIFO_31690/SR[0]                            |                4 |             14 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage20/instPerm31691/outCount_for_rd_addr[6]_i_1__0_n_0 |                3 |             14 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage20/instPerm31691/outCount_for_rd_data0              |                2 |             14 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage22/shiftFIFO_31715/SR[0]                            |                3 |             16 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage23/instPerm31716/outCount_for_rd_addr[7]_i_1__0_n_0 |                2 |             16 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage23/instPerm31716/outCount_for_rd_data0              |                3 |             16 |
+|  CLOCK_IBUF_BUFG    | proc/write_ptr                                                | proc/write_ptr[7]_i_1__0_n_0                                      |                3 |             16 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage23/instPerm31716/shiftFIFO_31724/SR[0]              |                2 |             16 |
+|  CLOCK_IBUF_BUFG    | wave_buf/wave_memory_reg_64_127_6_8_i_1_n_0                   |                                                                   |                2 |             16 |
+|  CLOCK_IBUF_BUFG    | dft_inst/stage23/instPerm31716/nextReg_31721/count            | dft_inst/stage22/shiftFIFO_31715/SR[0]                            |                3 |             16 |
+|  CLOCK_IBUF_BUFG    | wave_buf/wave_memory_reg_0_63_6_8_i_1_n_0                     |                                                                   |                2 |             16 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage29/instPerm31766/outCount_for_rd_data0              |                2 |             18 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage25/shiftFIFO_31740/SR[0]                            |                2 |             18 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage28/shiftFIFO_31765/SR[0]                            |                3 |             18 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage0/instPerm31544/outCount_for_rd_data0               |                3 |             18 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage0/instPerm31544/outCount_for_rd_addr[8]_i_1_n_0     |                3 |             18 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage26/instPerm31741/outCount_for_rd_addr[8]_i_1__0_n_0 |                3 |             18 |
+|  CLOCK_IBUF_BUFG    | dft_inst/stage29/instPerm31766/nextReg_31771/count            | dft_inst/stage28/shiftFIFO_31765/SR[0]                            |                3 |             18 |
+|  CLOCK_IBUF_BUFG    | dft_inst/stage26/instPerm31741/nextReg_31746/count            | dft_inst/stage25/shiftFIFO_31740/SR[0]                            |                4 |             18 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage26/instPerm31741/outCount_for_rd_data0              |                2 |             18 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage29/instPerm31766/outCount_for_rd_addr[8]_i_1__1_n_0 |                3 |             18 |
+|  CLOCK_IBUF_BUFG    |                                                               | fft_vis_brdg/SR[0]                                                |                5 |             18 |
+|  CLOCK_IBUF_BUFG    |                                                               | dft_inst/stage26/instPerm31741/shiftFIFO_31749/SR[0]              |                2 |             18 |
+|  CLOCK_IBUF_BUFG    | dft_inst/stage0/instPerm31544/nextReg_31549/count             | fft_vis_brdg/SR[0]                                                |                4 |             18 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/read_ptr[0]_i_1_n_0                              |                                                                   |                6 |             18 |
+|  clk_25M            | vga_unit/v_cnt                                                |                                                                   |                4 |             20 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/write_ptr[9]_i_1_n_0                             | sw1_IBUF                                                          |                3 |             20 |
+|  clk_25M            |                                                               |                                                                   |                7 |             20 |
+|  DAC_SCLK_OBUF_BUFG | fast_clk/shift_reg_reg[11]                                    |                                                                   |                2 |             22 |
+|  SCK_OBUF_BUFG      | mic_driver/audio_data[11]_i_1_n_0                             |                                                                   |                3 |             24 |
+|  CLOCK_IBUF_BUFG    | fir_brdg/peak_vol                                             |                                                                   |                3 |             24 |
+|  CLOCK_IBUF_BUFG    | fir_brdg/write_ptr_reg[0]                                     |                                                                   |                3 |             24 |
+|  CLOCK_IBUF_BUFG    | lpf_filter/audio_out_12bit_reg[11]                            | sw1_IBUF                                                          |                9 |             24 |
+|  SCK_OBUF_BUFG      | mic_driver/shift_reg[12]_i_1_n_0                              |                                                                   |                2 |             26 |
+|  CLOCK_IBUF_BUFG    | lpf_filter/count[6]_i_1_n_0                                   | sw1_IBUF                                                          |                6 |             28 |
+|  CLOCK_IBUF_BUFG    | high_pass_filter/FSM_onehot_state_reg_n_0_[2]                 | sw1_IBUF                                                          |                8 |             34 |
+|  CLOCK_IBUF_BUFG    | band_pass_filter/acc0_i_1__1_n_0                              | sw1_IBUF                                                          |               12 |             34 |
+|  CLOCK_IBUF_BUFG    | band_pass_filter/count0                                       | sw1_IBUF                                                          |                8 |             34 |
+|  CLOCK_IBUF_BUFG    | high_pass_filter/acc0_i_1__0_n_0                              | sw1_IBUF                                                          |                7 |             34 |
+|  CLOCK_IBUF_BUFG    | lpf_filter/FSM_onehot_state_reg_n_0_[2]                       | sw1_IBUF                                                          |                5 |             34 |
+|  CLOCK_IBUF_BUFG    | band_pass_filter/FSM_onehot_state_reg_n_0_[2]                 | sw1_IBUF                                                          |               10 |             34 |
+| ~w_6p25MHz_BUFG     |                                                               | btnC_IBUF                                                         |                4 |             34 |
+|  CLOCK_IBUF_BUFG    | high_pass_filter/count0                                       | sw1_IBUF                                                          |               10 |             34 |
+|  CLOCK_IBUF_BUFG    | lpf_filter/acc0_i_1_n_0                                       | sw1_IBUF                                                          |               10 |             34 |
+| ~w_6p25MHz_BUFG     | oled_unit/delay[0]_i_1_n_0                                    | btnC_IBUF                                                         |                5 |             40 |
+|  CLOCK_IBUF_BUFG    |                                                               | wave_buf/refresh_timer[21]_i_1_n_0                                |                7 |             44 |
+|  CLOCK_IBUF_BUFG    |                                                               | btnC_IBUF                                                         |                7 |             46 |
+|  CLOCK_IBUF_BUFG    | fast_clk/read_data0                                           |                                                                   |                7 |             48 |
+|  CLOCK_IBUF_BUFG    | proc/ram_even_reg_0_63_0_2_i_2_n_0                            |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | proc/ram_even_reg_128_191_0_2_i_1_n_0                         |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_0_63_0_2_i_1_n_0                   |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_384_447_0_2_i_1_n_0                |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_192_255_0_2_i_1_n_0                |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_320_383_0_2_i_1_n_0                |                                                                   |                8 |             64 |
+| ~w_6p25MHz_BUFG     | oled_unit/state                                               | btnC_IBUF                                                         |                7 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_128_191_0_2_i_1_n_0                |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_64_127_0_2_i_1_n_0                 |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_512_575_0_2_i_1_n_0                |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_448_511_0_2_i_1_n_0                |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_640_703_0_2_i_1_n_0                |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_576_639_0_2_i_1_n_0                |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_704_767_0_2_i_1_n_0                |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_960_1023_0_2_i_1_n_0               |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_768_831_0_2_i_1_n_0                |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_832_895_0_2_i_1_n_0                |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_896_959_0_2_i_1_n_0                |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | proc/ram_even_reg_192_255_0_2_i_1_n_0                         |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | proc/ram_even_reg_64_127_0_2_i_1_n_0                          |                                                                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG    | fft_vis_brdg/buffer_reg_r1_256_319_0_2_i_1_n_0                |                                                                   |                8 |             64 |
+| ~w_6p25MHz_BUFG     |                                                               | oled_unit/spi_word[39]_i_1_n_0                                    |               19 |             90 |
+|  CLOCK_IBUF_BUFG    | lpf_filter/shift_reg_reg[68][0]_srl32_i_1_n_0                 |                                                                   |               16 |             96 |
+|  CLOCK_IBUF_BUFG    | high_pass_filter/shift_reg_reg[136][0]_srl32_i_1_n_0          |                                                                   |               32 |            160 |
+|  CLOCK_IBUF_BUFG    | band_pass_filter/shift_reg_reg[180][0]_srl32_i_1_n_0          |                                                                   |               32 |            192 |
+|  CLOCK_IBUF_BUFG    |                                                               | sw1_IBUF                                                          |               56 |            290 |
+|  CLOCK_IBUF_BUFG    |                                                               |                                                                   |              325 |           1958 |
+|  CLOCK_IBUF_BUFG    | dft_inst/stage27/codeBlockIsnt31759/E[0]                      |                                                                   |              243 |           2384 |
++---------------------+---------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+
+
+
